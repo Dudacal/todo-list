@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+}
+
+#topbar{
+    position: relative;
+    padding-top: 10px;
+    height: auto;
+    background: linear-gradient(rgb(105, 48, 240) 0%, transparent 510%);
+    backdrop-filter: blur(5px);
+    height: 50px;
+    justify-content: space-between;
+    color: white;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#texto{
+    width: 50%;
+    margin-left: 120px;
+    margin-top: -50px;
+    float: left;
+    border-radius: 10px;
+    text-align: center;
+    height: 30px;
+}
+#bott{
+    margin-top: -47px;
+    float: right;
+    margin-right: 130px;
+    height: 30px;
+}
+
+#tudo{
+    width: 50%;
+    margin: 100px auto 20px;
+    background-color: lime;
+}
+
+#y{
+    margin-left: 550px;
+}
+
+#bt{
+    margin-left: 615px;
+}

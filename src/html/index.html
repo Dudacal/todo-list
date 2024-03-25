@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>dfddd</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/index.css"  
+</head>
+<body bgcolor="lightblue">
+<div id="topbar">Bem-vindo ao gerenciador de tarefas Marinardo</div>
+
+    <div id="tudo">
+        <input id="texto" placeholder="Escreva sua tarefa">
+        <button id="bott" onclick="add();">add</button>
+    </div>
+
+    <script>
+        function add(){
+            const x = document.createElement('x');
+            const y = document.createElement('h2');
+            const texto = document.getElementById('texto').value;
+            y.innerHTML = texto;
+            y.id="y";
+            x.appendChild(y);
+            document.body.appendChild(x);
+
+            const btFinalizar = document.createElement('button');
+            btFinalizar.innerHTML = "Finalizado";
+            btFinalizar.id="bt";
+            btFinalizar.addEventListener('click', function(){
+                x.remove();
+
+            })
+            x.appendChild(btFinalizar);
+        }
+    </script>
+
+</div>
+</body>
+</html>
